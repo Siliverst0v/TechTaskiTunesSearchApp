@@ -15,7 +15,7 @@ final class NetworkManager {
     let searchAlbumURL = "https://itunes.apple.com/search?entity=album&attribute=albumTerm&offset=0&limit=100&term="
     let albumSongsURL = "https://itunes.apple.com/lookup?entity=song&id="
     
-    func fetchAlbums(searchText: String, completion: @escaping (Welcome) -> Void) {
+    func fetchAlbums(searchText: String, completion: @escaping (Albums) -> Void) {
         
         let searchString = searchText.replacingOccurrences(of: " ", with: "+")
         guard let url = URL(string: "\(searchAlbumURL)\(searchString)") else {return}
@@ -23,9 +23,25 @@ final class NetworkManager {
         URLSession.shared.dataTask(with: url) { data, _, _ in
             guard let data = data else { return }
             do {
-                let albums = try JSONDecoder().decode(Welcome.self, from: data)
+                let albums = try JSONDecoder().decode(Albums.self, from: data)
                 DispatchQueue.main.async {
                     completion(albums)
+                }
+            } catch let error {
+                print(error)
+            }
+        }.resume()
+    }
+    
+    func fetchTracks(collectionID: Int, completion: @escaping ([Track]) -> Void) {
+        guard let url = URL(string: "\(albumSongsURL)\(collectionID)") else { return }
+        URLSession.shared.dataTask(with: url) { data, response, _ in
+            guard let data = data else { return }
+            do {
+                let decodedTracks = try JSONDecoder().decode(AlbumTracks.self, from: data)
+                let tracks = decodedTracks.results.filter {$0.wrapperType == "track"}
+                DispatchQueue.main.async {
+                    completion(tracks)
                 }
             } catch let error {
                 print(error)

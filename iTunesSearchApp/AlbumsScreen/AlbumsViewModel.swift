@@ -8,13 +8,13 @@
 import Foundation
 
 protocol AlbumsViewModelProtocol {
-    var albums: [Result] {get set}
+    var albums: [Album] {get set}
     func getAlbums(searchText: String, completion: @escaping () -> Void)
 }
 
 final class AlbumsViewModel: AlbumsViewModelProtocol {
     
-    var albums = [Result]()
+    var albums = [Album]()
     
     func getAlbums(searchText: String, completion: @escaping () -> Void) {
         NetworkManager.shared.fetchAlbums(searchText: searchText) { albums in

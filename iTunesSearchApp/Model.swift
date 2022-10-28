@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Welcome: Codable {
-    let results: [Result]
+struct Albums: Codable {
+    let results: [Album]
 }
 
-struct Result: Codable {
+struct Album: Codable {
     
     let artistName: String
     var artworkUrl100: String
@@ -30,13 +30,3 @@ struct Result: Codable {
     }
 }
 
-struct Track: Codable {
-    
-    var trackName: String
-    var trackNumber: Int
-    
-    init(trackName: String, trackNumber: Int) {
-        self.trackName = trackName
-        self.trackNumber = trackNumber
-    }
-}

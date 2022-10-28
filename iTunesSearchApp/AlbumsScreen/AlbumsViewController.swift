@@ -30,14 +30,18 @@ final class AlbumsViewController: UIViewController, UISearchBarDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        searchBar.delegate = self
-        albumTableView.delegate = self
-        albumTableView.dataSource = self
+        setDelegates()
         setupLayout()
     }
     
+    private func setDelegates() {
+        searchBar.delegate = self
+        albumTableView.delegate = self
+        albumTableView.dataSource = self
+    }
+    
     private func setupLayout() {
+        view.backgroundColor = .white
         view.addSubview(searchBar)
         view.addSubview(albumTableView)
         
@@ -64,6 +68,14 @@ final class AlbumsViewController: UIViewController, UISearchBarDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: AlbumCellView.reuseIdentifier, for: indexPath) as? AlbumCellView
         cell?.configure(with: viewModel, for: indexPath)
         return cell ?? AlbumCellView()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let album = viewModel.albums[indexPath.row]
+        if let cell = tableView.cellForRow(at: indexPath) as? AlbumCellView, let albumLogo = cell.albumLogo.image {
+            self.navigationController?.pushViewController(AlbumDetailsConfigurator.configure(with: album, albumLogo: albumLogo), animated: true)
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     //MARK: - SearchBar Delegate

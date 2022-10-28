@@ -17,6 +17,8 @@ final class AlbumCellView: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.image = UIImage(systemName: "camera")
         view.tintColor = .lightGray
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 5
         return view
     }()
     
