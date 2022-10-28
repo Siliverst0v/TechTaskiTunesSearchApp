@@ -16,10 +16,4 @@ struct Track: Codable {
     var trackName: String?
     var trackNumber: Int?
     let trackTimeMillis: Int?
-    
-//    init(trackName: String, trackNumber: Int, trackTimeMillis: Int?) {
-//        self.trackName = trackName
-//        self.trackNumber = trackNumber
-//        self.trackTimeMillis = trackTimeMillis
-//    }
 }
