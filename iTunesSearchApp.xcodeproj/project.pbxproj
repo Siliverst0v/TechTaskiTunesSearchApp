@@ -23,12 +23,13 @@
 		A43EFEA52904980F00B611A8 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43EFEA42904980F00B611A8 /* AlbumsViewController.swift */; };
 		A43EFEAA2904981100B611A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43EFEA92904981100B611A8 /* Assets.xcassets */; };
 		A43EFEAD2904981100B611A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43EFEAB2904981100B611A8 /* LaunchScreen.storyboard */; };
+		A479FC28290F16D400A6595B /* AuthSaveButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479FC27290F16D400A6595B /* AuthSaveButtonCell.swift */; };
 		A48B13E9290C6B1C00B6BD39 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13E8290C6B1C00B6BD39 /* AuthViewController.swift */; };
 		A48B13EC290C6D5900B6BD39 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13EB290C6D5900B6BD39 /* AuthViewModel.swift */; };
 		A48B13EE290C6D6600B6BD39 /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13ED290C6D6600B6BD39 /* AuthConfigurator.swift */; };
 		A48B13F0290C6D6E00B6BD39 /* AuthTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13EF290C6D6E00B6BD39 /* AuthTableView.swift */; };
 		A48B13F2290C71CF00B6BD39 /* AuthNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13F1290C71CF00B6BD39 /* AuthNameCell.swift */; };
-		A48B13F5290C71FB00B6BD39 /* AuthBirthDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13F4290C71FB00B6BD39 /* AuthBirthDateCell.swift */; };
+		A4915F8E290DD96B00C1D417 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4915F8D290DD96B00C1D417 /* ProfileModel.swift */; };
 		A4A62EDB29049BD80047FBDF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A62EDA29049BD80047FBDF /* NetworkManager.swift */; };
 		A4A62EDD29049C5D0047FBDF /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A62EDC29049C5D0047FBDF /* AlbumModel.swift */; };
 /* End PBXBuildFile section */
@@ -52,12 +53,13 @@
 		A43EFEA92904981100B611A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A43EFEAC2904981100B611A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A43EFEAE2904981100B611A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A479FC27290F16D400A6595B /* AuthSaveButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSaveButtonCell.swift; sourceTree = "<group>"; };
 		A48B13E8290C6B1C00B6BD39 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		A48B13EB290C6D5900B6BD39 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		A48B13ED290C6D6600B6BD39 /* AuthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigurator.swift; sourceTree = "<group>"; };
 		A48B13EF290C6D6E00B6BD39 /* AuthTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableView.swift; sourceTree = "<group>"; };
 		A48B13F1290C71CF00B6BD39 /* AuthNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNameCell.swift; sourceTree = "<group>"; };
-		A48B13F4290C71FB00B6BD39 /* AuthBirthDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBirthDateCell.swift; sourceTree = "<group>"; };
+		A4915F8D290DD96B00C1D417 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		A4A62EDA29049BD80047FBDF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A4A62EDC29049C5D0047FBDF /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 			children = (
 				A4A62EDC29049C5D0047FBDF /* AlbumModel.swift */,
 				A420779329087D1B00BB650E /* TrackModel.swift */,
+				A4915F8D290DD96B00C1D417 /* ProfileModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,7 +191,7 @@
 			children = (
 				A48B13EF290C6D6E00B6BD39 /* AuthTableView.swift */,
 				A48B13F1290C71CF00B6BD39 /* AuthNameCell.swift */,
-				A48B13F4290C71FB00B6BD39 /* AuthBirthDateCell.swift */,
+				A479FC27290F16D400A6595B /* AuthSaveButtonCell.swift */,
 			);
 			path = AuthTableView;
 			sourceTree = "<group>";
@@ -268,7 +271,6 @@
 				A48B13EE290C6D6600B6BD39 /* AuthConfigurator.swift in Sources */,
 				A48B13F0290C6D6E00B6BD39 /* AuthTableView.swift in Sources */,
 				A413CBF42905FCB200F0228D /* AlbumsViewModel.swift in Sources */,
-				A48B13F5290C71FB00B6BD39 /* AuthBirthDateCell.swift in Sources */,
 				A4A62EDD29049C5D0047FBDF /* AlbumModel.swift in Sources */,
 				A420779429087D1B00BB650E /* TrackModel.swift in Sources */,
 				A420779B29087FB800BB650E /* AlbumDetailsConfigurator.swift in Sources */,
@@ -283,6 +285,8 @@
 				A420779F29087FFE00BB650E /* TrackTableViewCell.swift in Sources */,
 				A43EFEA12904980F00B611A8 /* AppDelegate.swift in Sources */,
 				A420779D29087FE700BB650E /* AlbumDetailsTableView.swift in Sources */,
+				A4915F8E290DD96B00C1D417 /* ProfileModel.swift in Sources */,
+				A479FC28290F16D400A6595B /* AuthSaveButtonCell.swift in Sources */,
 				A420779629087F8800BB650E /* AlbumDetailsViewController.swift in Sources */,
 				A43EFEA32904980F00B611A8 /* SceneDelegate.swift in Sources */,
 			);

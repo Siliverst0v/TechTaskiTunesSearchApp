@@ -25,7 +25,6 @@ final class AuthTableView: UITableView {
         contentInset = .zero
         allowsSelection = true
         allowsMultipleSelection = false
-        delaysContentTouches = true
         contentInsetAdjustmentBehavior = .always
         showsHorizontalScrollIndicator = false
         isScrollEnabled = false
@@ -34,6 +33,6 @@ final class AuthTableView: UITableView {
         sectionFooterHeight = 0
         
         register(AuthNameCell.self, forCellReuseIdentifier: AuthNameCell.reuseIdentifier)
-        register(AuthBirthDateCell.self, forCellReuseIdentifier: AuthBirthDateCell.reuseIdentifier)
+        register(AuthSaveButtonCell.self, forCellReuseIdentifier: AuthSaveButtonCell.reuseIdentifier)
     }
 }
