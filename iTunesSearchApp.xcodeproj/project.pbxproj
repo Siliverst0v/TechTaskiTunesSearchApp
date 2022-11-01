@@ -23,15 +23,16 @@
 		A43EFEA52904980F00B611A8 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43EFEA42904980F00B611A8 /* AlbumsViewController.swift */; };
 		A43EFEAA2904981100B611A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43EFEA92904981100B611A8 /* Assets.xcassets */; };
 		A43EFEAD2904981100B611A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43EFEAB2904981100B611A8 /* LaunchScreen.storyboard */; };
-		A479FC28290F16D400A6595B /* AuthSaveButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479FC27290F16D400A6595B /* AuthSaveButtonCell.swift */; };
-		A48B13E9290C6B1C00B6BD39 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13E8290C6B1C00B6BD39 /* AuthViewController.swift */; };
-		A48B13EC290C6D5900B6BD39 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13EB290C6D5900B6BD39 /* AuthViewModel.swift */; };
-		A48B13EE290C6D6600B6BD39 /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13ED290C6D6600B6BD39 /* AuthConfigurator.swift */; };
-		A48B13F0290C6D6E00B6BD39 /* AuthTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13EF290C6D6E00B6BD39 /* AuthTableView.swift */; };
-		A48B13F2290C71CF00B6BD39 /* AuthNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13F1290C71CF00B6BD39 /* AuthNameCell.swift */; };
+		A48B13E9290C6B1C00B6BD39 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13E8290C6B1C00B6BD39 /* RegViewController.swift */; };
+		A48B13EC290C6D5900B6BD39 /* RegViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13EB290C6D5900B6BD39 /* RegViewModel.swift */; };
+		A48B13EE290C6D6600B6BD39 /* RegConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13ED290C6D6600B6BD39 /* RegConfigurator.swift */; };
+		A48B13F0290C6D6E00B6BD39 /* RegTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13EF290C6D6E00B6BD39 /* RegTableView.swift */; };
+		A48B13F2290C71CF00B6BD39 /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B13F1290C71CF00B6BD39 /* ProfileInfoCell.swift */; };
 		A4915F8E290DD96B00C1D417 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4915F8D290DD96B00C1D417 /* ProfileModel.swift */; };
 		A4A62EDB29049BD80047FBDF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A62EDA29049BD80047FBDF /* NetworkManager.swift */; };
 		A4A62EDD29049C5D0047FBDF /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A62EDC29049C5D0047FBDF /* AlbumModel.swift */; };
+		A4B2A4482910822C00F4DE4E /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A4472910822C00F4DE4E /* FooterView.swift */; };
+		A4B2A44A2910853D00F4DE4E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2A4492910853D00F4DE4E /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,15 +54,16 @@
 		A43EFEA92904981100B611A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A43EFEAC2904981100B611A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A43EFEAE2904981100B611A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A479FC27290F16D400A6595B /* AuthSaveButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSaveButtonCell.swift; sourceTree = "<group>"; };
-		A48B13E8290C6B1C00B6BD39 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		A48B13EB290C6D5900B6BD39 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		A48B13ED290C6D6600B6BD39 /* AuthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigurator.swift; sourceTree = "<group>"; };
-		A48B13EF290C6D6E00B6BD39 /* AuthTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableView.swift; sourceTree = "<group>"; };
-		A48B13F1290C71CF00B6BD39 /* AuthNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNameCell.swift; sourceTree = "<group>"; };
+		A48B13E8290C6B1C00B6BD39 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		A48B13EB290C6D5900B6BD39 /* RegViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewModel.swift; sourceTree = "<group>"; };
+		A48B13ED290C6D6600B6BD39 /* RegConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegConfigurator.swift; sourceTree = "<group>"; };
+		A48B13EF290C6D6E00B6BD39 /* RegTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTableView.swift; sourceTree = "<group>"; };
+		A48B13F1290C71CF00B6BD39 /* ProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
 		A4915F8D290DD96B00C1D417 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		A4A62EDA29049BD80047FBDF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A4A62EDC29049C5D0047FBDF /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		A4B2A4472910822C00F4DE4E /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		A4B2A4492910853D00F4DE4E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				A40953B82907576B0018445E /* Support */,
-				A48B13EA290C6B2800B6BD39 /* AuthScreen */,
+				A4B2A44B2910855400F4DE4E /* AuthScreen */,
+				A48B13EA290C6B2800B6BD39 /* RegistrationScreen */,
 				A413CBF52905FCB700F0228D /* AlbumsScreen */,
 				A420779729087F9000BB650E /* AlbumDetailsScreen */,
 				A40953B9290757780018445E /* Services */,
@@ -175,25 +178,33 @@
 			path = iTunesSearchApp;
 			sourceTree = "<group>";
 		};
-		A48B13EA290C6B2800B6BD39 /* AuthScreen */ = {
+		A48B13EA290C6B2800B6BD39 /* RegistrationScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A48B13E8290C6B1C00B6BD39 /* AuthViewController.swift */,
-				A48B13EB290C6D5900B6BD39 /* AuthViewModel.swift */,
-				A48B13ED290C6D6600B6BD39 /* AuthConfigurator.swift */,
+				A48B13E8290C6B1C00B6BD39 /* RegViewController.swift */,
+				A48B13EB290C6D5900B6BD39 /* RegViewModel.swift */,
+				A48B13ED290C6D6600B6BD39 /* RegConfigurator.swift */,
 				A48B13F3290C71D300B6BD39 /* AuthTableView */,
 			);
-			path = AuthScreen;
+			path = RegistrationScreen;
 			sourceTree = "<group>";
 		};
 		A48B13F3290C71D300B6BD39 /* AuthTableView */ = {
 			isa = PBXGroup;
 			children = (
-				A48B13EF290C6D6E00B6BD39 /* AuthTableView.swift */,
-				A48B13F1290C71CF00B6BD39 /* AuthNameCell.swift */,
-				A479FC27290F16D400A6595B /* AuthSaveButtonCell.swift */,
+				A48B13EF290C6D6E00B6BD39 /* RegTableView.swift */,
+				A48B13F1290C71CF00B6BD39 /* ProfileInfoCell.swift */,
+				A4B2A4472910822C00F4DE4E /* FooterView.swift */,
 			);
 			path = AuthTableView;
+			sourceTree = "<group>";
+		};
+		A4B2A44B2910855400F4DE4E /* AuthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A4B2A4492910853D00F4DE4E /* AuthViewController.swift */,
+			);
+			path = AuthScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,26 +279,27 @@
 			files = (
 				A40953AF290753EF0018445E /* ImageCache.swift in Sources */,
 				A420779929087FAD00BB650E /* AlbumDetailsViewModel.swift in Sources */,
-				A48B13EE290C6D6600B6BD39 /* AuthConfigurator.swift in Sources */,
-				A48B13F0290C6D6E00B6BD39 /* AuthTableView.swift in Sources */,
+				A48B13EE290C6D6600B6BD39 /* RegConfigurator.swift in Sources */,
+				A48B13F0290C6D6E00B6BD39 /* RegTableView.swift in Sources */,
+				A4B2A44A2910853D00F4DE4E /* AuthViewController.swift in Sources */,
 				A413CBF42905FCB200F0228D /* AlbumsViewModel.swift in Sources */,
 				A4A62EDD29049C5D0047FBDF /* AlbumModel.swift in Sources */,
 				A420779429087D1B00BB650E /* TrackModel.swift in Sources */,
 				A420779B29087FB800BB650E /* AlbumDetailsConfigurator.swift in Sources */,
 				A413CBEF2905F9F700F0228D /* AlbumsTableView.swift in Sources */,
 				A4A62EDB29049BD80047FBDF /* NetworkManager.swift in Sources */,
-				A48B13EC290C6D5900B6BD39 /* AuthViewModel.swift in Sources */,
+				A48B13EC290C6D5900B6BD39 /* RegViewModel.swift in Sources */,
 				A413CBF72905FE4C00F0228D /* AlbumsConfigurator.swift in Sources */,
 				A43EFEA52904980F00B611A8 /* AlbumsViewController.swift in Sources */,
-				A48B13F2290C71CF00B6BD39 /* AuthNameCell.swift in Sources */,
-				A48B13E9290C6B1C00B6BD39 /* AuthViewController.swift in Sources */,
+				A48B13F2290C71CF00B6BD39 /* ProfileInfoCell.swift in Sources */,
+				A48B13E9290C6B1C00B6BD39 /* RegViewController.swift in Sources */,
 				A413CBF22905FA3B00F0228D /* AlbumCellView.swift in Sources */,
 				A420779F29087FFE00BB650E /* TrackTableViewCell.swift in Sources */,
 				A43EFEA12904980F00B611A8 /* AppDelegate.swift in Sources */,
 				A420779D29087FE700BB650E /* AlbumDetailsTableView.swift in Sources */,
 				A4915F8E290DD96B00C1D417 /* ProfileModel.swift in Sources */,
-				A479FC28290F16D400A6595B /* AuthSaveButtonCell.swift in Sources */,
 				A420779629087F8800BB650E /* AlbumDetailsViewController.swift in Sources */,
+				A4B2A4482910822C00F4DE4E /* FooterView.swift in Sources */,
 				A43EFEA32904980F00B611A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

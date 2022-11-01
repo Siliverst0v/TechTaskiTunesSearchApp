@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class AuthNameCell: UITableViewCell {
+final class ProfileInfoCell: UITableViewCell {
     
     static var reuseIdentifier: String { "\(Self.self)" }
     
@@ -53,7 +53,7 @@ final class AuthNameCell: UITableViewCell {
         ])
     }
     
-    func configure(with viewModel: AuthViewModelProtocol, for indexPath: IndexPath) {
+    func configure(with viewModel: RegViewModelProtocol, for indexPath: IndexPath) {
         let placeholder = viewModel.getCellViewModel(for: indexPath)
         self.textField.placeholder = placeholder
     }

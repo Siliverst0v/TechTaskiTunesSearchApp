@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-final class AuthConfigurator {
+final class RegConfigurator {
     
     static func configure() -> UIViewController {
-        let viewModel: AuthViewModelProtocol = AuthViewModel()
-        let authVC = AuthViewController(viewModel: viewModel)
+        let viewModel: RegViewModelProtocol = RegViewModel()
+        let authVC = RegViewController(viewModel: viewModel)
         return authVC
     }
 }

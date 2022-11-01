@@ -16,15 +16,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-//        let navigationController = UINavigationController()
-//        let albumsVC = AlbumsConfigurator.configure()
-//        navigationController.viewControllers = [albumsVC]
-        
-        let authVC = AuthConfigurator.configure()
+        let navigationController = UINavigationController()
+        let authVC = AuthViewController()
+        navigationController.viewControllers = [authVC]
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = authVC
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 }

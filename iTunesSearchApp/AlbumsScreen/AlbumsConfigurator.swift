@@ -12,6 +12,7 @@ final class AlbumsConfigurator {
     static func configure() -> UIViewController {
         let viewModel = AlbumsViewModel()
         let albumsVC = AlbumsViewController(viewModel: viewModel)
-        return albumsVC
+        let albumsNC = UINavigationController(rootViewController: albumsVC)
+        return albumsNC
     }
 }

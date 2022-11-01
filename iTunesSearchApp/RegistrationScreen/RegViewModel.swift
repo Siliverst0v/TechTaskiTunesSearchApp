@@ -1,5 +1,5 @@
 //
-//  AuthViewModel.swift
+//  RegViewModel.swift
 //  iTunesSearchApp
 //
 //  Created by Анатолий Силиверстов on 28.10.2022.
@@ -8,21 +8,22 @@
 import Foundation
 import UIKit
 
-protocol AuthViewModelProtocol {
+protocol RegViewModelProtocol {
     func getNumberOfSections() -> Int
     func getNumberOfRowsInSection(section: Int) -> Int
     func getCellViewModel(for indexPath: IndexPath) -> String
+    func getFooter(for section: Int) -> String
+    func nameIsValid(name: String) -> Bool
     func emailIsValid(email: String) -> Bool
     func passwordIsValid(password: String) -> Bool
-    func alert(vc: UIViewController, title: String, message: String)
     func formatInputPhoneNumber(with mask: String, phone: String) -> String
 }
 
-final class AuthViewModel: AuthViewModelProtocol {
+final class RegViewModel: RegViewModelProtocol {
     
     var profileInfo = [
         ["Name"],
-        ["Second Name"],
+        ["Surname"],
         ["Date of birth"],
         ["Phone number"],
         ["E-Mail"],
@@ -41,11 +42,23 @@ final class AuthViewModel: AuthViewModelProtocol {
         profileInfo[indexPath.section][0]
     }
     
-    func alert(vc: UIViewController, title: String, message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
-        alert.addAction(okAction)
-        vc.present(alert, animated: true)
+    func getFooter(for section: Int) -> String {
+        switch section {
+        case 0,1:
+            return "Only english letters"
+        case 2:
+            return "Аge not less than 18 years old"
+        case 5:
+            return "Password must be at least 6 characters long, must be a number, lower case letter, upper case letter"
+        default:
+            return ""
+        }
+    }
+    
+    func nameIsValid(name: String) -> Bool {
+        let nameValidationRegex = "^[a-zA-Z]+$"
+        let nameValidationPredicate = NSPredicate(format: "SELF MATCHES %@", nameValidationRegex)
+        return nameValidationPredicate.evaluate(with: name)
     }
     
     func emailIsValid(email: String) -> Bool {

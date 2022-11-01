@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class AuthTableView: UITableView {
+final class RegTableView: UITableView {
     
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -30,9 +30,8 @@ final class AuthTableView: UITableView {
         isScrollEnabled = false
         separatorStyle = .none
         rowHeight = 55
-        sectionFooterHeight = 0
         
-        register(AuthNameCell.self, forCellReuseIdentifier: AuthNameCell.reuseIdentifier)
-        register(AuthSaveButtonCell.self, forCellReuseIdentifier: AuthSaveButtonCell.reuseIdentifier)
+        register(ProfileInfoCell.self, forCellReuseIdentifier: ProfileInfoCell.reuseIdentifier)
+        register(FooterView.self, forHeaderFooterViewReuseIdentifier: FooterView.reuseIdentifier)
     }
 }
